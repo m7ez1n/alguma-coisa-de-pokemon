@@ -6,7 +6,8 @@
   "author": "m7Aei <mateuspm2015@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^5.10.1"
   },
   "devDependencies": {
     "eslint": "^6.0.1",
