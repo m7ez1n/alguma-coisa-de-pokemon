@@ -15,9 +15,19 @@ class PokemonController {
     return res.json(pokemon)
   }
 
-  async update (req, res) {}
+  async update (req, res) {
+    const pokemon = await Pokemon.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
 
-  async destroy (req, res) {}
+    return res.json(pokemon)
+  }
+
+  async destroy (req, res) {
+    await Pokemon.findByIdAndDelete(req.params.id)
+
+    return res.send()
+  }
 }
 
 module.exports = new PokemonController()
