@@ -1,7 +1,13 @@
 const Pokemon = require('../models/Pokemon')
 
 class PokemonController {
-  async index (req, res) {}
+  async index (req, res) {
+    const pokemons = await Pokemon.findAll({
+      limit: 10
+    })
+
+    res.json(pokemons)
+  }
 
   async show (req, res) {
     const pokemon = await Pokemon.findById(req.params.id)
