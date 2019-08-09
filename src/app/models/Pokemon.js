@@ -1,3 +1,5 @@
+const sequelizePaginate = require('sequelize-paginate')
+
 module.exports = (sequelize, DataTypes) => {
   const Pokemon = sequelize.define('Pokemon', {
     name: DataTypes.STRING,
@@ -30,6 +32,8 @@ module.exports = (sequelize, DataTypes) => {
     CP1: DataTypes.INTEGER,
     CP2: DataTypes.INTEGER
   })
+
+  sequelizePaginate.paginate(Pokemon)
 
   return Pokemon
 }
