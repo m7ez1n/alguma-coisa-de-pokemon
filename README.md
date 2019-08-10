@@ -18,7 +18,6 @@ Esta API deverá seguir o mínimo de práticas RESTful e conter listagens, busca
 - [x] Algum banco de dados, por exemplo, MySQL, SQL Server, MongoDB, etc...
 - [x] Git
 
-### Acessem a He4rtDevs: :exclamation: :purple_heart:
 
 <h2 align="center">
   Acessem a He4rt e a Rocketseat :purple_heart:
